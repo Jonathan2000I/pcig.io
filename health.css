@@ -1,0 +1,363 @@
+:root{
+
+    --primary: rgba(41, 41, 43, 0.63);
+
+    --secondary: rgba(7, 7, 14, 0.712);
+
+}
+
+
+
+
+body{
+    font: 15px/1.5;
+    font-family: "playball";
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5e1;
+    place-items: center;
+    place-content: center;
+    height: 100vh;
+
+}
+ 
+
+
+.container{
+    
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+     
+}
+
+.header-container{
+     
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+     
+}
+
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    
+}
+
+/*button{
+    height:25px;
+    background:transparent;
+    border: 0;
+    padding-left:15px;
+    padding-right:15px;
+    color:white;
+    box-shadow:black 2px 2px 3px;
+}
+
+button:hover{
+    opacity: 0.6;
+    
+}*/
+
+header{
+    background: rgb(26, 26, 61);
+    color:white;
+    padding-top:10px;
+    max-height: 60px;
+    width: 100%;
+    box-shadow: #000 2px 2px 3px;
+    position: fixed;
+    
+
+    
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:10px;
+} 
+
+header li{
+    float: left;
+    padding-top: 10px;
+    margin-left: 15px;
+    
+
+}
+
+header #topper{
+    float:left;
+    
+    
+}
+
+header #topper h1{
+margin: 0;
+    
+}
+
+header nav{
+    float:right;
+    margin-top:10px;
+}
+
+header .current a{
+    color:skyblue;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:skyblue;
+    font-weight:bold;
+    text-shadow:black 1px 2px 4px;
+}
+
+header a.current:hover{
+    color:white;
+    font-weight:normal;
+}
+
+.dropdown {
+    text-transform: uppercase;
+    font-size:10px;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  }
+
+  span:hover{
+    color:skyblue;
+    text-shadow:black 1px 2px 4px;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover .dropdown-content{
+    color:skyblue;
+    display: block;
+    text-shadow:black 1px 2px 4px;
+  }
+
+  .fa-angle-right{
+      float: right;
+      color: white;
+  }
+
+  
+
+  .hover-me:hover .dropdown-content-1 {
+      position: absolute;
+      display: block;
+      margin-top: 40px;
+      margin-left: 100px;
+
+    
+  }
+
+
+
+.showcase{
+    background-image:linear-gradient(137deg, var(--primary), var(--secondary)),
+     url(imag/pexels-pixabay-236380.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+
+}
+
+.health-container{
+    
+    width: 95%;
+
+    margin: auto;
+
+    overflow: hidden;
+
+}
+
+
+#container{
+    text-align: center;
+    padding-top: 200px;
+    margin-left: 0%;
+    
+    color: white;
+}
+
+.health-text{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+
+
+
+
+#health h2{
+
+    font-size: 20px;
+
+    
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: rgb(192, 192, 38);
+    
+  margin-left: 10px;
+
+    font-weight: bold;
+
+    padding-left: 50px;
+
+}
+
+
+
+
+
+#health p{
+
+    font-size: 10px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight: bold;
+  
+     padding-left: 10px;
+}
+
+
+
+
+
+
+.container-image{
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+    
+    
+}
+
+.container-image img{
+    width: 420px;
+    height: 300px;
+    border: rgba(128, 128, 128, 0.329) solid 10px;
+}
+
+.showcase1{
+    --primary:blue;
+    background-image:linear-gradient(137deg, var(--primary), var(--secondary)),
+     url(imag/pexels-pixabay-139398.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     height: 100px;
+}
+
+
+
+.health-text1 h2{
+    
+    font-size: 30px;
+
+    
+   text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: rgb(26, 26, 61);;
+    
+
+    font-weight: bold;
+
+
+
+}
+
+.health-text1 p{
+    
+    font-size: 14px;
+
+    text-align: inherit;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight: bold;
+  
+}
+
+
+
+
+footer{
+    height: 50px;
+    color:white;
+    background-color:rgb(31, 31, 88);
+    text-align:center;
+    padding-top: 10px;
+    margin-top: 10%;
+
+}
+
+
+@media(max-width:768px){
+    hr,
+    header #topper,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    .article,
+    footer,
+    aside#sidebar{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+    footer{
+       
+       height: auto;
+    }
+
+    .article{
+        height: 200%;
+    }
+
+
+    header{
+        padding-bottom:20px;
+    }
+
+    header nav li{
+        display:inline;
+    }
+
+    #showcase h1{
+        margin-top:40px;
+    }
+   hr{
+       margin-left: 90px;
+   }
+    
+
+}    
+
+
+

@@ -1,0 +1,390 @@
+:root{
+  --primary: rgba(41, 41, 43, 0.63);
+  --secondary: rgba(7, 7, 14, 0.712);
+
+}
+
+
+body{
+    font: 15px/1.5;
+    /* font: 15px/1.5; */
+    font-family: "playball";
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5e1;
+    place-items: center;
+    place-content: center;
+    height: 100vh;
+
+}
+ 
+
+
+.container{
+    
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+     
+}
+
+.header-container{
+     
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+     
+}
+
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    
+}
+
+/*button{
+    height:25px;
+    background:transparent;
+    border: 0;
+    padding-left:15px;
+    padding-right:15px;
+    color:white;
+    box-shadow:black 2px 2px 3px;
+}
+
+button:hover{
+    opacity: 0.6;
+    
+}*/
+
+header{
+    background: rgb(26, 26, 61);
+    color:white;
+    padding-top:10px;
+    max-height: 60px;
+    width: 100%;
+    box-shadow: #000 2px 2px 3px;
+    position: fixed;
+    
+
+    
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:10px;
+} 
+
+header li{
+    float: left;
+    padding-top: 10px;
+    margin-left: 15px;
+    
+
+}
+
+header #topper{
+    float:left;
+    
+    
+}
+
+header #topper h1{
+margin: 0;
+
+    
+}
+
+
+
+header nav{
+    float:right;
+    margin-top:10px;
+}
+
+header .current a{
+    color:skyblue;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:skyblue;
+    font-weight:bold;
+    text-shadow:black 1px 2px 4px;
+}
+
+header a.current:hover{
+    color:white;
+    font-weight:normal;
+}
+
+.dropdown {
+    text-transform: uppercase;
+    font-size:10px;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  }
+
+  span:hover{
+    color:skyblue;
+    text-shadow:black 1px 2px 4px;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover .dropdown-content{
+    color:skyblue;
+    display: block;
+    text-shadow:black 1px 2px 4px;
+  }
+
+  .fa-angle-right{
+      float: right;
+      color: white;
+  }
+
+  
+
+  .hover-me:hover .dropdown-content-1 {
+      position: absolute;
+      display: block;
+      margin-top: 40px;
+      margin-left: 100px;
+
+    
+  }
+
+
+
+#showcase{
+    min-height: 400px;
+    background:linear-gradient(137deg, var(--primary), var(--secondary)),
+    url(imag/pexels-pixabay-414967.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   transform: 5s;
+    text-align: center;
+    color:white;
+    object-position: center;
+    object-fit: scale-down;
+    padding-top: 200px;
+  
+ 
+ 
+
+  animation-name: animation;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-play-state: running;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+
+}
+
+@keyframes animation {
+    0%{ background-image:linear-gradient(137deg, var(--primary), var(--secondary)),
+         url(imag/pexels-kampus-production-5940837.jpg);
+    } 20%{
+        background-image:linear-gradient(137deg, var(--primary), var(--secondary)),
+         url(imag/pexels-startup-stock-photos-7095.jpg);
+    } 40%{
+        background-image:linear-gradient(137deg, var(--primary), var(--secondary)),
+         url(imag/pexels-italo-melo-2446695.jpg);
+    }60%{
+        background-image:linear-gradient(137deg, var(--primary), var(--secondary)),
+         url(imag/pexels-narcisa-aciko-1292464.jpg);
+    }
+}
+
+.overlay{
+    background: #000;
+}
+
+
+#showcase h1{
+    padding-top: 200px;
+    font-size:30px;
+    margin-bottom:10px;
+    text-shadow: black 2px 2px 2px;
+}
+
+
+#showcase p{
+    font-size:20px;
+}
+
+#newsletter{
+    margin-top: 10px;
+    
+    color:white;
+    height: 50px;
+    background:rgb(223, 219, 219);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#newsletter h3{
+    float:left;
+}
+
+#newsletter form{
+    float:right;
+    margin-top:20px;
+}
+
+#newsletter input[type="email"]{
+    padding:4px;
+    height:10px;
+    width:250px;
+}
+
+#boxes{
+    margin-top:10px;
+    
+} 
+
+#boxes .box{
+    float:left;
+    text-align:center;
+    width:30%;
+    padding: 10px;
+    
+    
+}
+
+#boxes .box img{
+    width: 200px;
+    object-fit: contain;
+    object-position: cover;
+
+}
+
+
+.box a{
+          text-decoration: none;
+          cursor: pointer;
+          
+}
+
+#boxes .box  a:hover{
+    color: blue;
+    
+}
+
+.box a img:hover{
+    box-shadow: black 2px 2px 3px;
+}
+
+hr{
+    margin: 20px 20px;
+}
+
+.container{
+    padding-left: 40px;
+}
+
+
+
+.article{
+    background-color: rgba(209, 204, 204, 0.336);
+    margin-top: 40px;
+    max-width: 100%;
+    height: 80%;
+
+}
+
+.logo-container img{
+    height: 50px;
+    padding-top: 20px;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+#text h1{
+    color:rgb(26, 26, 61);
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact-section{
+    background-color:rgb(26, 26, 61);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+/*
+.article img{
+    width: 100px;
+    object-position: center;
+    object-fit: cover;
+    margin-top: 10px;
+    
+}*/
+
+footer{
+    height: 50px;
+    color:white;
+    background-color:rgb(31, 31, 88);
+    text-align:center;
+    padding-top: 10px;
+    margin-top: 10%;
+}
+/*
+@media(max-width:768px){
+    header #topper,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    .article,
+    footer,
+    aside#sidebar{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+
+    header{
+        padding-bottom:20px;
+    }
+
+    header nav li{
+        display:inline;
+    }
+
+    #showcase h1{
+        margin-top:40px;
+    }
+
+    #newsletter button{
+        display:block;
+        width:100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width:100%;
+        margin-bottom:5px;
+    }
+}    
